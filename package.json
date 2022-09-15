@@ -1,0 +1,26 @@
+{
+  "name": "snp-csharp-basic",
+  "displayName": "Snippington C# Basic Snippets",
+  "description": "Basic snippets for expedited development in C#.",
+  "icon": "images/snp_csharp_basic.png",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.71.0"
+  },
+  "publisher": "snippington",
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "csharp",
+        "path": "./snippets/csharp-basic.code-snippets"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/snippington/snp-csharp-basic"
+  }
+}

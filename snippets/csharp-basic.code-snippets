@@ -1,0 +1,456 @@
+// Name: C# basic snippets.
+// Desc: Based on examples from C# documentation.
+// Source Name: C# Documentation
+// Source Url: https://docs.microsoft.com/en-us/dotnet/csharp/
+{
+	"C# Class": {
+        "scope": "csharp",
+        "prefix": "csharp: class",
+        "body": [
+                "public class ${1:Sample}", 
+                "{", 
+                "\tpublic string ${2:SampleProp} { get; set;}",
+                "\tpublic ${1}(string val)", 
+                "\t{", 
+                "\t\t${2} = val;", 
+                "\t}", 
+                "}"
+        ],
+        "description": "C# class."
+    },
+    "C# Property": {
+        "scope": "csharp",
+        "prefix": "csharp: prop",
+        "body": [
+                "public string ${1:SampleProperty} { get; set; }", 
+        ],
+        "description": "C# property."
+    },
+    "C# Property Read Only": {
+        "scope": "csharp",
+        "prefix": "csharp: prop-readonly",
+        "body": [
+                "public string ${1:SampleProperty} { get; }", 
+        ],
+        "description": "C# property read only."
+    },
+    "C# Constructor": {
+        "scope": "csharp",
+        "prefix": "csharp: constructor",
+        "body": [
+                "public ${1:Class}(string val)", 
+                "{",
+                "\t${2:SampleProperty}=val;",
+                "}",
+        ],
+        "description": "C# constructor."
+    },
+    "C# Class Instance": {
+        "scope": "csharp",
+        "prefix": "csharp: class-instance",
+        "body": [
+                "${1:SampleClass} ${2:sampleObject} = new ${1}();",
+        ],
+        "description": "C# object of a class."
+    },
+    "C# Record": {
+        "scope": "csharp",
+        "prefix": "csharp: record",
+        "body": [
+                "public record ${1:SampleRecord}(", 
+                "string ${2:SamplePropertyOne},", 
+                "string ${3:SamplePropertyTwo}", 
+                ");"
+        ],
+        "description": "C# record."
+    },
+    "C# Record Instance": {
+        "scope": "csharp",
+        "prefix": "csharp: record-instance",
+        "body": [
+                "${1:SampleRecord} ${2:sampleRecordObject} = new(", 
+                "\"sampleValOne\",", 
+                "\"sampleValTwo\"", 
+                ");"
+        ],
+        "description": "C# record instance."
+    },
+    "C# Interface": {
+        "scope": "csharp",
+        "prefix": "csharp: interface",
+        "body": [
+                "public interface I${1:SampleInterface}{}", 
+        ],
+        "description": "C# interface."
+    },
+    "C# Generic List": {
+        "scope": "csharp",
+        "prefix": "csharp: generic-list",
+        "body": [
+                "public class GenericList<T>", 
+                "{", 
+                "\tpublic void Add(T input) { }", 
+                "}\n", 
+                "GenericList<${1:int}> list1 = new GenericList<${1}>();", 
+                "list1.Add(1);"
+        ],
+        "description": "C# generic list."
+    },
+    "C# Array List": {
+        "scope": "csharp",
+        "prefix": "csharp: array-list",
+        "body": [
+                "ArrayList ${1:sampleArray} = new ArrayList();", 
+        ],
+        "description": "C# array list."
+    },
+    "C# Bit Array": {
+        "scope": "csharp",
+        "prefix": "csharp: bit-array",
+        "body": [
+                "BitArray myBA2 = new BitArray( 5, false );", 
+        ],
+        "description": "C# bit array."
+    },
+    "C# Console Write": {
+        "scope": "csharp",
+        "prefix": "csharp: console-write",
+        "body": [
+                "Console.Write(\"${1:Hello World!}\");", 
+        ],
+        "description": "C# console write."
+    },
+	"C# Console Write Line": {
+        "scope": "csharp",
+        "prefix": "csharp: console-write-line",
+        "body": [
+                "Console.WriteLine(\"${1:Hello World!}\");", 
+        ],
+        "description": "C# console write."
+    },
+	"C# Variable Pattern Match": {
+        "scope": "csharp",
+        "prefix": "csharp: pattern-match-variable",
+        "body": [
+			"var selectedVal = \"Player A\" switch", 
+			"{", 
+			"\t\"${1:Player A}\" => \"Hi Player A!\",", 
+			"\t\"${2:Player B}\" => \"Hi Player B!\",", 
+			"\t_ => \"Not Set\"", 
+			"};"
+		],
+        "description": "C# pattern match variable."
+    },
+	"C# Array Lambda": {
+        "scope": "csharp",
+        "prefix": "csharp: array-lambda",
+        "body": [
+			"int[] ${1:sampleArray} = { 2, 3, 4, 5 };", 
+			"var squaredVals = ${1}.Select(x => x * x);"
+		],
+        "description": "C# array lambda implementation."
+    },
+	"C# Lambda Statement": {
+        "scope": "csharp",
+        "prefix": "csharp: lambda-statement",
+        "body": [
+			"Action<string> hello = param =>", 
+			"{", 
+			"\tstring helloString = $\"Hello {param}!\";", 
+			"\tConsole.WriteLine(helloString);", 
+			"};", 
+			"hello(\"World\");"
+		],
+        "description": "C# lambda statement."
+    },
+	"C# Lambda Expression": {
+        "scope": "csharp",
+        "prefix": "csharp: lambda-expr",
+        "body": [
+			"Action line = () => Console.WriteLine();", 
+		],
+        "description": "C# lambda expression."
+    },
+	"C# Lambda Async": {
+        "scope": "csharp",
+        "prefix": "csharp: lambda-async",
+        "body": [
+			"private async Task SampleAsync()", 
+			"{", 
+			"\tawait Task.Delay(1000);", 
+			"}\n", 
+			"await SampleAsync();"
+		],
+        "description": "C# lambda async."
+    },
+	"C# Lambda Query Count": {
+        "scope": "csharp",
+        "prefix": "csharp: lambda-query-count",
+        "body": [
+			"int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };", 
+			"int oddNumbers = numbers.Count(n => n % 2 == 1);"
+		],
+        "description": "C# lambda query count."
+    },
+	"C# Lambda Natural": {
+        "scope": "csharp",
+        "prefix": "csharp: lambda-natural",
+        "body": [
+			"var parse = (string s) => int.Parse(s);", 
+		],
+        "description": "C# lambda natural."
+    },
+	"C# Lambda Explicit Type": {
+        "scope": "csharp",
+        "prefix": "csharp: lambda-explicit",
+        "body": [
+			"var choose = object (bool b) => b ? 1 : \"two\";", 
+		],
+        "description": "C# lambda explicit."
+    },
+	"C# For Loop": {
+        "scope": "csharp",
+        "prefix": "csharp: for-loop",
+        "body": [
+                "for (int i = 0; i < 3; i++)", 
+                "{", 
+                "\tConsole.Write(i);", 
+                "}"
+        ],
+        "description": "C# for loop."
+    },
+	"C# For Each Loop": {
+        "scope": "csharp",
+        "prefix": "csharp: for-each",
+        "body": [
+                "var fibNumbers = new List<int> { 0, 1, 1, 2, 3, 5, 8, 13 };", 
+                "foreach (int element in fibNumbers)", 
+                "{", 
+                "\tConsole.Write($\"{element} \");", 
+                "}"
+        ],
+        "description": "C# for each."
+    },
+	"C# Do While Loop": {
+        "scope": "csharp",
+        "prefix": "csharp: do-while",
+        "body": [
+			"int n = 0;", 
+			"do", 
+			"{", 
+			"Console.Write(n);", 
+			"n++;", 
+			"} while (n < 5);"
+		],
+        "description": "C# do while."
+    },
+	"C# While Loop": {
+        "scope": "csharp",
+        "prefix": "csharp: while-loop",
+        "body": [
+			"int n = 0;", 
+			"while (n < 5)", 
+			"{", 
+			"\tConsole.Write(n);", 
+			"\tn++;", 
+			"}"
+		],
+        "description": "C# while loop."
+    },
+	"C# If Then Else": {
+        "scope": "csharp",
+        "prefix": "csharp: if-then-else",
+        "body": [
+			"int someVal=15;", 
+			"if (someVal < 20)", 
+			"{", 
+			"\tConsole.WriteLine(\"This Val.\");", 
+			"}else", 
+			"{", 
+			"\tConsole.WriteLine(\"That Val.\");", 
+			"}"
+		],
+        "description": "C# If Then Else."
+    },
+	"C# Switch Case": {
+        "scope": "csharp",
+        "prefix": "csharp: switch-case",
+        "body": [
+			"int someVal=15;", 
+			"switch (someVal)", 
+			"{", 
+			"case < 5:", 
+			"\tConsole.WriteLine(\"This value.\");", 
+			"\tbreak;", 
+			"case > 10:", 
+			"\tConsole.WriteLine(\"That value\");", 
+			"\tbreak;", 
+			"default:", 
+			"\tConsole.WriteLine(\"Default value\");", 
+			"\tbreak;", 
+			"}"
+		],
+        "description": "C# switch case statement."
+    },
+	"C# String Split": {
+        "scope": "csharp",
+        "prefix": "csharp: string-split",
+        "body": [
+			"string phrase = \"The quick brown fox jumps over the lazy dog.\";", 
+			"string[] words = phrase.Split(' ');", 
+		],
+        "description": "C# split string."
+    },
+	"C# String Interpolation": {
+        "scope": "csharp",
+        "prefix": "csharp: string-interpolation",
+        "body": [
+			"string sampleString = \"World!\";", 
+			"string str = $\"Hello {sampleString}\";", 
+		],
+        "description": "C# string interpolation."
+    },
+	"C# String Contains": {
+        "scope": "csharp",
+        "prefix": "csharp: string-contains",
+        "body": [
+			"string sampleString = \"Hello World\";", 
+			"bool searchResult = sampleString.Contains(\"Hello\");", 
+		],
+        "description": "C# check if string contains."
+    },
+	"C# String Starts With": {
+        "scope": "csharp",
+        "prefix": "csharp: string-startswith",
+        "body": [
+			"string sampleString = \"Hello World\";", 
+			"bool searchResult = sampleString.StartsWith(\"Hello\", System.StringComparison.CurrentCultureIgnoreCase);", 
+		],
+        "description": "C# check if string starts with."
+    },
+	"C# String Endswith": {
+        "scope": "csharp",
+        "prefix": "csharp: string-endswith",
+        "body": [
+			"string sampleString = \"Hello World\";", 
+			"bool searchResult = sampleString.EndsWith(\"Hello\", System.StringComparison.CurrentCultureIgnoreCase);", 
+		],
+        "description": "C# check if string ends with."
+    },
+	"C# Typecast Explicit": {
+        "scope": "csharp",
+        "prefix": "csharp: typecast-explicit",
+        "body": [
+			"double x = 1234.7;",
+			"int a;",
+			"a = (int)x;",
+			"System.Console.WriteLine(a);",
+		],
+        "description": "C# convert type."
+    },
+	"C# Dictionary": {
+        "scope": "csharp",
+        "prefix": "csharp: dictionary",
+        "body": [
+			"using System.Collections.Generic;\n",
+			"public class StudentName",
+			"{",
+			"\tpublic string FirstName { get; set; } = \"\";",
+			"\tpublic string LastName { get; set; } = \"\";",
+			"\tpublic int ID { get; set; } = 0;",
+			"}\n",
+			"var students = new Dictionary<int, StudentName>()", 
+			"{", 
+			"\t{ 111, new StudentName", 
+			"\t\t{", 
+			"\t\t\tFirstName=\"Nicola\",", 
+			"\t\t\tLastName=\"Tesla\",", 
+			"\t\t\tID=211", 
+			"\t\t}", 
+			"\t},", 
+			"};"
+		],
+        "description": "C# dictionary snippet."
+    },
+	"C# Query": {
+        "scope": "csharp",
+        "prefix": "csharp: query",
+        "body": [
+			"var customQuery =", 
+			"\tfrom student in students",
+			"\twhere student.ExamScore > 10", 
+			"\tselect new { student.FirstName };\n", 
+			"foreach (var obj in customQuery)", 
+			"{", 
+			"\tConsole.WriteLine(obj.FirstName);", 
+			"}"
+		],
+        "description": "C# query."
+    },
+	"C# Array": {
+        "scope": "csharp",
+        "prefix": "csharp: array",
+        "body": [
+			"${1:int}[] ${2:array} = new ${1}[5];", 
+		],
+        "description": "C# array."
+    },
+	"C# Array Initialization": {
+        "scope": "csharp",
+        "prefix": "csharp: array-init",
+        "body": [
+			"${1:int}[] ${2:array} = new ${1} { 1, 3, 5, 7, 9 };", 
+		],
+        "description": "C# array initialization."
+    },
+	"C# Array Multidimensional": {
+        "scope": "csharp",
+        "prefix": "csharp: array-multi",
+        "body": [
+			"${1:int}[,] ${2:array} = new ${1}[4, 2];", 
+		],
+        "description": "C# array multi-dimensional."
+    },
+	"C# Array Multidimensional Initialization": {
+        "scope": "csharp",
+        "prefix": "csharp: array-multi-init",
+        "body": [
+			"${1:int}[,] ${2:array} = { { 1, 2 }, { 3, 4 }, { 5, 6 }, { 7, 8 } };", 
+		],
+        "description": "C# array multi-dimensional initialization."
+    },
+	"C# Array As Argument": {
+        "scope": "csharp",
+        "prefix": "csharp: array-arg",
+        "body": [
+			"${1:int}[] arr", 
+		],
+        "description": "C# array as argument."
+    },
+	"C# Try Parse": {
+        "scope": "csharp",
+        "prefix": "csharp: try-parse",
+        "body": [
+			"int i = 0;", 
+			"string s = \"108\";",
+			"bool result = int.TryParse(s, out i);"
+		],
+        "description": "C# try parse if type can be converted."
+    },
+	"C# Indexer": {
+        "scope": "csharp",
+        "prefix": "csharp: indexer",
+        "body": [
+			"class SampleCollection<T>", 
+			"{", 
+			"\tprivate T[] arr = new T[100];\n", 
+			"\tpublic T this[int i]", 
+			"\t{", 
+			"\t\tget => arr[i];", 
+			"\t\tset => arr[i] = value;", 
+			"\t}", 
+			"}"
+		],
+        "description": "C# indexer."
+    },
+}
