@@ -1,4 +1,4 @@
-# snp-csharp-basic
+# Snippington C# Basic
 VSCode extension for basic C# snippets.
 
 #### Shortcuts
