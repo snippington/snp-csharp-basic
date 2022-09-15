@@ -1,13 +1,18 @@
 {
   "name": "snp-csharp-basic",
-  "displayName": "Snippington C# Basic Snippets",
-  "description": "Basic snippets for expedited development in C#.",
+  "displayName": "C# Basic Snippets",
+  "description": "Basic snippets for development in C#.",
   "icon": "images/snp_csharp_basic.png",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.71.0"
   },
   "publisher": "snippington",
+  "keywords": [
+    "c#",
+    "code",
+    "accelerator"
+  ],
   "categories": [
     "Snippets"
   ],
