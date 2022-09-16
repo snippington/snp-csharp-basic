@@ -5,7 +5,7 @@
 {
 	"C# Class": {
         "scope": "csharp",
-        "prefix": "csharp: class",
+        "prefix": "csp: class",
         "body": [
                 "public class ${1:Sample}", 
                 "{", 
@@ -20,7 +20,7 @@
     },
     "C# Property": {
         "scope": "csharp",
-        "prefix": "csharp: prop",
+        "prefix": "csp: prop",
         "body": [
                 "public string ${1:SampleProperty} { get; set; }", 
         ],
@@ -28,7 +28,7 @@
     },
     "C# Property Read Only": {
         "scope": "csharp",
-        "prefix": "csharp: prop-readonly",
+        "prefix": "csp: prop-readonly",
         "body": [
                 "public string ${1:SampleProperty} { get; }", 
         ],
@@ -36,7 +36,7 @@
     },
     "C# Constructor": {
         "scope": "csharp",
-        "prefix": "csharp: constructor",
+        "prefix": "csp: constructor",
         "body": [
                 "public ${1:Class}(string val)", 
                 "{",
@@ -47,7 +47,7 @@
     },
     "C# Class Instance": {
         "scope": "csharp",
-        "prefix": "csharp: class-instance",
+        "prefix": "csp: class-instance",
         "body": [
                 "${1:SampleClass} ${2:sampleObject} = new ${1}();",
         ],
@@ -55,7 +55,7 @@
     },
     "C# Record": {
         "scope": "csharp",
-        "prefix": "csharp: record",
+        "prefix": "csp: record",
         "body": [
                 "public record ${1:SampleRecord}(", 
                 "string ${2:SamplePropertyOne},", 
@@ -66,7 +66,7 @@
     },
     "C# Record Instance": {
         "scope": "csharp",
-        "prefix": "csharp: record-instance",
+        "prefix": "csp: record-instance",
         "body": [
                 "${1:SampleRecord} ${2:sampleRecordObject} = new(", 
                 "\"sampleValOne\",", 
@@ -77,7 +77,7 @@
     },
     "C# Interface": {
         "scope": "csharp",
-        "prefix": "csharp: interface",
+        "prefix": "csp: interface",
         "body": [
                 "public interface I${1:SampleInterface}{}", 
         ],
@@ -85,7 +85,7 @@
     },
     "C# Generic List": {
         "scope": "csharp",
-        "prefix": "csharp: generic-list",
+        "prefix": "csp: generic-list",
         "body": [
                 "public class GenericList<T>", 
                 "{", 
@@ -98,7 +98,7 @@
     },
     "C# Array List": {
         "scope": "csharp",
-        "prefix": "csharp: array-list",
+        "prefix": "csp: array-list",
         "body": [
                 "ArrayList ${1:sampleArray} = new ArrayList();", 
         ],
@@ -106,7 +106,7 @@
     },
     "C# Bit Array": {
         "scope": "csharp",
-        "prefix": "csharp: bit-array",
+        "prefix": "csp: bit-array",
         "body": [
                 "BitArray myBA2 = new BitArray( 5, false );", 
         ],
@@ -114,7 +114,7 @@
     },
     "C# Console Write": {
         "scope": "csharp",
-        "prefix": "csharp: console-write",
+        "prefix": "csp: console-write",
         "body": [
                 "Console.Write(\"${1:Hello World!}\");", 
         ],
@@ -122,7 +122,7 @@
     },
 	"C# Console Write Line": {
         "scope": "csharp",
-        "prefix": "csharp: console-write-line",
+        "prefix": "csp: console-write-line",
         "body": [
                 "Console.WriteLine(\"${1:Hello World!}\");", 
         ],
@@ -130,7 +130,7 @@
     },
 	"C# Variable Pattern Match": {
         "scope": "csharp",
-        "prefix": "csharp: pattern-match-variable",
+        "prefix": "csp: pattern-match-variable",
         "body": [
 			"var selectedVal = \"Player A\" switch", 
 			"{", 
@@ -143,7 +143,7 @@
     },
 	"C# Array Lambda": {
         "scope": "csharp",
-        "prefix": "csharp: array-lambda",
+        "prefix": "csp: array-lambda",
         "body": [
 			"int[] ${1:sampleArray} = { 2, 3, 4, 5 };", 
 			"var squaredVals = ${1}.Select(x => x * x);"
@@ -152,7 +152,7 @@
     },
 	"C# Lambda Statement": {
         "scope": "csharp",
-        "prefix": "csharp: lambda-statement",
+        "prefix": "csp: lambda-statement",
         "body": [
 			"Action<string> hello = param =>", 
 			"{", 
@@ -165,7 +165,7 @@
     },
 	"C# Lambda Expression": {
         "scope": "csharp",
-        "prefix": "csharp: lambda-expr",
+        "prefix": "csp: lambda-expr",
         "body": [
 			"Action line = () => Console.WriteLine();", 
 		],
@@ -173,7 +173,7 @@
     },
 	"C# Lambda Async": {
         "scope": "csharp",
-        "prefix": "csharp: lambda-async",
+        "prefix": "csp: lambda-async",
         "body": [
 			"private async Task SampleAsync()", 
 			"{", 
@@ -185,7 +185,7 @@
     },
 	"C# Lambda Query Count": {
         "scope": "csharp",
-        "prefix": "csharp: lambda-query-count",
+        "prefix": "csp: lambda-query-count",
         "body": [
 			"int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };", 
 			"int oddNumbers = numbers.Count(n => n % 2 == 1);"
@@ -194,7 +194,7 @@
     },
 	"C# Lambda Natural": {
         "scope": "csharp",
-        "prefix": "csharp: lambda-natural",
+        "prefix": "csp: lambda-natural",
         "body": [
 			"var parse = (string s) => int.Parse(s);", 
 		],
@@ -202,7 +202,7 @@
     },
 	"C# Lambda Explicit Type": {
         "scope": "csharp",
-        "prefix": "csharp: lambda-explicit",
+        "prefix": "csp: lambda-explicit",
         "body": [
 			"var choose = object (bool b) => b ? 1 : \"two\";", 
 		],
@@ -210,7 +210,7 @@
     },
 	"C# For Loop": {
         "scope": "csharp",
-        "prefix": "csharp: for-loop",
+        "prefix": "csp: for-loop",
         "body": [
                 "for (int i = 0; i < 3; i++)", 
                 "{", 
@@ -221,7 +221,7 @@
     },
 	"C# For Each Loop": {
         "scope": "csharp",
-        "prefix": "csharp: for-each",
+        "prefix": "csp: for-each",
         "body": [
                 "var fibNumbers = new List<int> { 0, 1, 1, 2, 3, 5, 8, 13 };", 
                 "foreach (int element in fibNumbers)", 
@@ -233,7 +233,7 @@
     },
 	"C# Do While Loop": {
         "scope": "csharp",
-        "prefix": "csharp: do-while",
+        "prefix": "csp: do-while",
         "body": [
 			"int n = 0;", 
 			"do", 
@@ -246,7 +246,7 @@
     },
 	"C# While Loop": {
         "scope": "csharp",
-        "prefix": "csharp: while-loop",
+        "prefix": "csp: while-loop",
         "body": [
 			"int n = 0;", 
 			"while (n < 5)", 
@@ -259,7 +259,7 @@
     },
 	"C# If Then Else": {
         "scope": "csharp",
-        "prefix": "csharp: if-then-else",
+        "prefix": "csp: if-then-else",
         "body": [
 			"int someVal=15;", 
 			"if (someVal < 20)", 
@@ -274,7 +274,7 @@
     },
 	"C# Switch Case": {
         "scope": "csharp",
-        "prefix": "csharp: switch-case",
+        "prefix": "csp: switch-case",
         "body": [
 			"int someVal=15;", 
 			"switch (someVal)", 
@@ -294,7 +294,7 @@
     },
 	"C# String Split": {
         "scope": "csharp",
-        "prefix": "csharp: string-split",
+        "prefix": "csp: string-split",
         "body": [
 			"string phrase = \"The quick brown fox jumps over the lazy dog.\";", 
 			"string[] words = phrase.Split(' ');", 
@@ -303,7 +303,7 @@
     },
 	"C# String Interpolation": {
         "scope": "csharp",
-        "prefix": "csharp: string-interpolation",
+        "prefix": "csp: string-interpolation",
         "body": [
 			"string sampleString = \"World!\";", 
 			"string str = $\"Hello {sampleString}\";", 
@@ -312,7 +312,7 @@
     },
 	"C# String Contains": {
         "scope": "csharp",
-        "prefix": "csharp: string-contains",
+        "prefix": "csp: string-contains",
         "body": [
 			"string sampleString = \"Hello World\";", 
 			"bool searchResult = sampleString.Contains(\"Hello\");", 
@@ -321,7 +321,7 @@
     },
 	"C# String Starts With": {
         "scope": "csharp",
-        "prefix": "csharp: string-startswith",
+        "prefix": "csp: string-startswith",
         "body": [
 			"string sampleString = \"Hello World\";", 
 			"bool searchResult = sampleString.StartsWith(\"Hello\", System.StringComparison.CurrentCultureIgnoreCase);", 
@@ -330,7 +330,7 @@
     },
 	"C# String Endswith": {
         "scope": "csharp",
-        "prefix": "csharp: string-endswith",
+        "prefix": "csp: string-endswith",
         "body": [
 			"string sampleString = \"Hello World\";", 
 			"bool searchResult = sampleString.EndsWith(\"Hello\", System.StringComparison.CurrentCultureIgnoreCase);", 
@@ -339,7 +339,7 @@
     },
 	"C# Typecast Explicit": {
         "scope": "csharp",
-        "prefix": "csharp: typecast-explicit",
+        "prefix": "csp: typecast-explicit",
         "body": [
 			"double x = 1234.7;",
 			"int a;",
@@ -350,7 +350,7 @@
     },
 	"C# Dictionary": {
         "scope": "csharp",
-        "prefix": "csharp: dictionary",
+        "prefix": "csp: dictionary",
         "body": [
 			"using System.Collections.Generic;\n",
 			"public class StudentName",
@@ -374,7 +374,7 @@
     },
 	"C# Query": {
         "scope": "csharp",
-        "prefix": "csharp: query",
+        "prefix": "csp: query",
         "body": [
 			"var customQuery =", 
 			"\tfrom student in students",
@@ -389,7 +389,7 @@
     },
 	"C# Array": {
         "scope": "csharp",
-        "prefix": "csharp: array",
+        "prefix": "csp: array",
         "body": [
 			"${1:int}[] ${2:array} = new ${1}[5];", 
 		],
@@ -397,7 +397,7 @@
     },
 	"C# Array Initialization": {
         "scope": "csharp",
-        "prefix": "csharp: array-init",
+        "prefix": "csp: array-init",
         "body": [
 			"${1:int}[] ${2:array} = new ${1} { 1, 3, 5, 7, 9 };", 
 		],
@@ -405,7 +405,7 @@
     },
 	"C# Array Multidimensional": {
         "scope": "csharp",
-        "prefix": "csharp: array-multi",
+        "prefix": "csp: array-multi",
         "body": [
 			"${1:int}[,] ${2:array} = new ${1}[4, 2];", 
 		],
@@ -413,7 +413,7 @@
     },
 	"C# Array Multidimensional Initialization": {
         "scope": "csharp",
-        "prefix": "csharp: array-multi-init",
+        "prefix": "csp: array-multi-init",
         "body": [
 			"${1:int}[,] ${2:array} = { { 1, 2 }, { 3, 4 }, { 5, 6 }, { 7, 8 } };", 
 		],
@@ -421,7 +421,7 @@
     },
 	"C# Array As Argument": {
         "scope": "csharp",
-        "prefix": "csharp: array-arg",
+        "prefix": "csp: array-arg",
         "body": [
 			"${1:int}[] arr", 
 		],
@@ -429,7 +429,7 @@
     },
 	"C# Try Parse": {
         "scope": "csharp",
-        "prefix": "csharp: try-parse",
+        "prefix": "csp: try-parse",
         "body": [
 			"int i = 0;", 
 			"string s = \"108\";",
@@ -439,7 +439,7 @@
     },
 	"C# Indexer": {
         "scope": "csharp",
-        "prefix": "csharp: indexer",
+        "prefix": "csp: indexer",
         "body": [
 			"class SampleCollection<T>", 
 			"{", 

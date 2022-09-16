@@ -5,46 +5,46 @@ VSCode extension for basic C# snippets.
 
 | Prefix | Description |
 | ------ | ------------ |
-| `csharp: class` | Public Class |
-| `csharp: prop` | Property |
-| `csharp: prop-readonly` | Read only property. |
-| `csharp: constructor` | Constructor. |
-| `csharp: class-instance` | Instance of a class. |
-| `csharp: record` | Record. |
-| `csharp: record-instance` | Instance of record. |
-| `csharp: interface` | Interface. |
-| `csharp: generic-list` | Generic List. |
-| `csharp: array-list` | Array List. |
-| `csharp: bit-array` | Bit Array. |
-| `csharp: console-write` | Console Write. |
-| `csharp: console-write-line` | Console Write Line. |
-| `csharp: pattern-match-variable` | Pattern Match Variable. |
-| `csharp: array-lambda` | Array Lambda. |
-| `csharp: lambda-statement` | Lambda statement. |
-| `csharp: lambda-expr` | Lambda Expression. |
-| `csharp: lambda-async` | Lambda Async. |
-| `csharp: lambda-query-count` | Lambda query. |
-| `csharp: lambda-natural` | Lambda natural. |
-| `csharp: lambda-explicit` | Lambda explicit. |
-| `csharp: for-loop` | For loop. |
-| `csharp: for-each` | For each. |
-| `csharp: do-while` | Do while. |
-| `csharp: while-loop` | While loop. |
-| `csharp: if-then-else` | If then else. |
-| `csharp: switch-case` | Switch case. |
-| `csharp: string-split` | String split. |
-| `csharp: string-interpolation` | String interpolation. |
-| `csharp: string-contains` | String contains. |
-| `csharp: string-startswith` | String starts with. |
-| `csharp: string-endswith` | String ends with. |
-| `csharp: typecast-explicit` | Typecast explicit. |
-| `csharp: dictionary` | Dictionary. |
-| `csharp: query` | Query. |
-| `csharp: array` | Array. |
-| `csharp: array-init` | Initialized array. |
-| `csharp: array-multi` | Multi-dimensional array. |
-| `csharp: array-multi-init` | Initialized multi-dimensional array. |
-| `csharp: array-arg` | Array as an argument. |
-| `csharp: try-parse` | Try parse. |
-| `csharp: indexer` | Indexer. |
+| `csp: class` | Public Class |
+| `csp: prop` | Property |
+| `csp: prop-readonly` | Read only property. |
+| `csp: constructor` | Constructor. |
+| `csp: class-instance` | Instance of a class. |
+| `csp: record` | Record. |
+| `csp: record-instance` | Instance of record. |
+| `csp: interface` | Interface. |
+| `csp: generic-list` | Generic List. |
+| `csp: array-list` | Array List. |
+| `csp: bit-array` | Bit Array. |
+| `csp: console-write` | Console Write. |
+| `csp: console-write-line` | Console Write Line. |
+| `csp: pattern-match-variable` | Pattern Match Variable. |
+| `csp: array-lambda` | Array Lambda. |
+| `csp: lambda-statement` | Lambda statement. |
+| `csp: lambda-expr` | Lambda Expression. |
+| `csp: lambda-async` | Lambda Async. |
+| `csp: lambda-query-count` | Lambda query. |
+| `csp: lambda-natural` | Lambda natural. |
+| `csp: lambda-explicit` | Lambda explicit. |
+| `csp: for-loop` | For loop. |
+| `csp: for-each` | For each. |
+| `csp: do-while` | Do while. |
+| `csp: while-loop` | While loop. |
+| `csp: if-then-else` | If then else. |
+| `csp: switch-case` | Switch case. |
+| `csp: string-split` | String split. |
+| `csp: string-interpolation` | String interpolation. |
+| `csp: string-contains` | String contains. |
+| `csp: string-startswith` | String starts with. |
+| `csp: string-endswith` | String ends with. |
+| `csp: typecast-explicit` | Typecast explicit. |
+| `csp: dictionary` | Dictionary. |
+| `csp: query` | Query. |
+| `csp: array` | Array. |
+| `csp: array-init` | Initialized array. |
+| `csp: array-multi` | Multi-dimensional array. |
+| `csp: array-multi-init` | Initialized multi-dimensional array. |
+| `csp: array-arg` | Array as an argument. |
+| `csp: try-parse` | Try parse. |
+| `csp: indexer` | Indexer. |
 
