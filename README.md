@@ -37,4 +37,14 @@ VSCode extension for basic C# snippets.
 | `csharp: string-contains` | String contains. |
 | `csharp: string-startswith` | String starts with. |
 | `csharp: string-endswith` | String ends with. |
+| `csharp: typecast-explicit` | Typecast explicit. |
+| `csharp: dictionary` | Dictionary. |
+| `csharp: query` | Query. |
+| `csharp: array` | Array. |
+| `csharp: array-init` | Initialized array. |
+| `csharp: array-multi` | Multi-dimensional array. |
+| `csharp: array-multi-init` | Initialized multi-dimensional array. |
+| `csharp: array-arg` | Array as an argument. |
+| `csharp: try-parse` | Try parse. |
+| `csharp: indexer` | Indexer. |
 
