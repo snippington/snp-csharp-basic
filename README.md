@@ -47,4 +47,11 @@ VSCode extension for basic C# snippets.
 | `csp: array-arg` | Array as an argument. |
 | `csp: try-parse` | Try parse. |
 | `csp: indexer` | Indexer. |
+| `csp: linq-import` | Linq import |
+| `csp: linq-query` | Linq query |
+| `csp: min-api-route-get` | C# Minimal API GET route |
+| `csp: min-api-route-post` | C# Minimal API POST route |
+| `csp: min-api-route-put` | C# Minimal API PUT route |
+| `csp: min-api-route-del` | C# Minimal API DELETE route |
+| `csp: min-api-route-params` | C# Minimal API Route with parameters |
 
