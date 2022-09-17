@@ -510,4 +510,13 @@
         ],
         "description": "C# Minimal API DELETE route."
     },
+    "C# Min API Route With Params": {
+        "scope": "csharp",
+        "prefix": "csp: min-api-route-params",
+        "body": [
+            "app.MapGet(\"/users/{userId}/books/{bookId}\", ",
+            "\t(int userId, int bookId) => $\"The user id is {userId} and book id is {bookId}\");",
+        ],
+        "description": "C# Minimal API route with parameters."
+    },
 }
