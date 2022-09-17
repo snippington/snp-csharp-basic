@@ -453,4 +453,25 @@
 		],
         "description": "C# indexer."
     },
+	"C# Linq Import": {
+        "scope": "csharp",
+        "prefix": "csp: linq-import",
+        "body": [
+            "using System.Linq;",
+        ],
+        "description": "C# Linq import."
+    },
+	"C# Linq Query": {
+        "scope": "csharp",
+        "prefix": "csp: linq-query",
+        "body": [
+            "int[] numbers = new int[4] { 1, 2, 3, 4 };",
+            "",
+            "var numQuery =",
+            "\tfrom num in numbers",
+            "\twhere (num % 2) == 0",
+            "\tselect num;",
+        ],
+        "description": "C# Linq Query."
+    },
 }
