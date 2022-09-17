@@ -474,4 +474,40 @@
         ],
         "description": "C# Linq Query."
     },
+    "C# Min API GET Route": {
+        "scope": "csharp",
+        "prefix": "csp: min-api-route-get",
+        "body": [
+            "var getHandler = () => \"This is a GET handler\";",
+            "app.MapGet(\"/\", () => getHandler);",
+        ],
+        "description": "C# Minimal API GET route."
+    },
+    "C# Min API POST Route": {
+        "scope": "csharp",
+        "prefix": "csp: min-api-route-post",
+        "body": [
+            "var postHandler = () => \"This is a POST handler\";",
+            "app.MapPost(\"/\", () => postHandler);",
+        ],
+        "description": "C# Minimal API POST route."
+    },
+    "C# Min API PUT Route": {
+        "scope": "csharp",
+        "prefix": "csp: min-api-route-put",
+        "body": [
+            "var putHandler = () => \"This is a PUT handler\";",
+            "app.MapPut(\"/\", () => putHandler);",
+        ],
+        "description": "C# Minimal API PUT route."
+    },
+    "C# Min API DELETE Route": {
+        "scope": "csharp",
+        "prefix": "csp: min-api-route-del",
+        "body": [
+            "var delHandler = () => \"This is a DELETE handler\";",
+            "app.MapDelete(\"/\", () => delHandler);",
+        ],
+        "description": "C# Minimal API DELETE route."
+    },
 }
